@@ -1,0 +1,193 @@
+/*Login and Register page*/
+
+.Loginwrite{
+  height: 100px;
+  width: 300px;
+  margin: 0px;
+  margin-left: 75px;
+
+  font-size: 90px;
+  font-family: "Rubik", serif;
+  color: #003B36;
+}
+
+.LoginBar{
+  background-color: #F7F0F5;
+  height: 100vh;
+  width: 38%;
+  float: left;
+  
+}
+
+.root{
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+
+.usernameInput{
+  margin-top: 50px;
+  margin-left: 75px;
+  
+  font-size: 25px;
+  height: 100px;
+  width: 575px;
+
+  border-radius: 25px;
+}
+
+.topbar{
+  height: 225px;
+  width: 100%;
+
+}
+
+input{
+  border: 0px;
+  background: #D9D9D9;
+  padding-left: 25px;
+
+}
+
+
+
+::placeholder{
+  color: #F7F0F5;
+}
+
+
+.botRightPanel{
+  margin-left: 38%;
+  height: 100vh;
+  width: 62%;
+
+
+
+  background-image: url(assets/enhancedBgForChatApp.jpeg);
+
+}
+
+.topRightPanel{
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.30) 100%);
+}
+
+.submit{
+  height: 65px;
+  width: 150px;
+
+
+  margin-left: 495px;
+  margin-top: 50px;
+  border: 10px;
+  cursor:pointer;
+
+  background-color: #9C99FC;
+  border-radius: 30px;
+
+
+  font-family: "Rubik", serif;
+  font-size: 20px;
+  color: #F7F0F5;
+  text-align: center;
+}
+
+
+
+/*Direct Page wala part*/
+
+.leftStatusBar {
+  background-color: #F7F0F5;
+  height: 100vh;
+  width: 5%;
+  float: left;
+}
+
+.chatsBar {
+  background-color: #9E9E9E;
+  height: 100vh;
+  width: 20%;
+  float: left;
+}
+
+.chatting {
+  background-color: #0e0e21;
+  height: 100vh;
+  width: 75%;
+  float: left;
+}
+
+.chatBox {
+  position: relative;
+  /*top: 90%;*/
+  left: 2.5%;
+  background-color: #EEEEEE;
+  height: 7.5vh;
+  width: 95%;
+  border-radius: 10px;
+  float: left;
+}
+
+.messageInput { 
+  border: 0px;
+  margin: 0px; 
+  font-size: 25px;
+  height: 100%;
+  width: 100%;
+
+
+  border-radius: 10px;
+  float: left;
+}
+
+.sendButton {
+  position: relative;
+  top: -85%;
+  left: 97.5%;
+
+  background-color: #9C99FC;
+  
+
+  margin: 0px; 
+  height: 50px;
+  width: 50px;
+  float: left;
+
+
+
+  border-radius: 22.5px;
+
+}
+
+.chatMessage {
+  margin: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 5%;
+  background-color: #D9D9D9;
+}
+
+.all-chats {
+  overflow-y: auto;
+  height: 90vh;
+}
+
+/* Hide default scrollbar */
+.page-id-xx,
+html {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
