@@ -23,7 +23,7 @@ function Register() {
 	const postUser = async () => {
 		try {
 		  const response = await axios.post(
-			"http://localhost:8080/root/addUser",
+			"https://glistening-custard-9997ce.netlify.app/root/addUser",
 			{
 			  username: username,
 			  password: password
