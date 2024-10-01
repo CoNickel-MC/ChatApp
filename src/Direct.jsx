@@ -34,7 +34,7 @@ function Direct({username}){
         const postUser = async () => {
 	    	try {
 	    	    const response = await axios.post(
-	    		    "http://localhost:8080/root/getChats",
+	    		    "https://glistening-custard-9997ce.netlify.app/root/getChats",
 	    		    {
 	    		        sender: username,
 	    		        receiver: receiver
@@ -63,7 +63,7 @@ function Direct({username}){
         const getSenders = async () => {
 	    	try {
 	    	    const response = await axios.post(
-	    		    "http://localhost:8080/root/getSenders",
+	    		    "https://glistening-custard-9997ce.netlify.app/root/getSenders",
 	    		    {
 	    		        sender: username,
 	    		        receiver: receiver
@@ -88,7 +88,7 @@ function Direct({username}){
     },[])
 
     useEffect(() => {
-        const eventSource = new EventSource(`http://localhost:8080/root/stream/${username}`);
+        const eventSource = new EventSource(`https://glistening-custard-9997ce.netlify.app/root/stream/${username}`);
         
         eventSource.onmessage = (event) => {
             const newIncomingMessage = JSON.parse(event.data);
@@ -118,7 +118,7 @@ function Direct({username}){
     const sendMessage = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:8080/root/sendChat",
+                "https://glistening-custard-9997ce.netlify.app/root/sendChat",
                 {
                     sender: username,
                     receiver: receiver,
