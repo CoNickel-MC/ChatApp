@@ -22,7 +22,7 @@ function LeftPanel({setUser}) { //Left side of login Page
 	const postUser = async () => {
 		try {
 		  const response = await axios.post(
-			"http://localhost:8080/root/login",
+			"https://glistening-custard-9997ce.netlify.app/root/login",
 			{
 			  username: username,
 			  password: password
